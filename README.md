@@ -15,33 +15,32 @@ The service provides **user registration** and **login** endpoints with JWT auth
 
 ## 📂 Project Structure
 
-.
-├── bin/ # CDK app entrypoint
-│ └── auth-lambda.ts
-├── lib/ # CDK stack (infra definitions)
-│ └── auth-lambda-stack.ts
+```
+
+├── bin/                  # CDK app entrypoint
+│   └── auth-lambda.ts
+├── lib/                  # CDK stack (infra definitions)
+│   └── auth-lambda-stack.ts
 ├── src/
-│ ├── handlers/ # Lambda entrypoints
-│ │ └── auth.ts
-│ ├── schemas/ # Zod validation schemas
-│ │ └── auth.schema.ts
-│ ├── services/ # Business logic
-│ │ ├── db.service.ts
-│ │ ├── token.service.ts
-│ │ └── user.service.ts
-│ └── types/ # Type definitions
-│ └── user.ts
-├── test/ # (Optional) unit/integration tests
+│   ├── handlers/         # Lambda entrypoints
+│   │   └── auth.ts
+│   ├── schemas/          # Zod validation schemas
+│   │   └── auth.schema.ts
+│   ├── services/         # Business logic
+│   │   ├── db.service.ts
+│   │   ├── token.service.ts
+│   │   └── user.service.ts
+│   └── types/            # Type definitions
+│       └── user.ts
+├── test/                 # (Optional) unit/integration tests
 ├── package.json
 ├── tsconfig.json
 ├── jest.config.js
 ├── cdk.json
 └── README.md
 
-yaml
-Copy code
-
----
+```
+```
 
 ## ⚡ Features
 
@@ -146,15 +145,3 @@ npm run test
 - Default removal policy is `DESTROY` (good for dev, update to `RETAIN` in production).
 
 ``
-
-👉 The **key difference** is:
-
-- ✅ **Markdown fenced code blocks** (` ```bash` instead of "bash / Copy code")
-- ✅ **Headings (`##`)** instead of plain bold text
-- ✅ **Lists and links render cleanly**
-
-If you put the above in a file called `README.md`, GitHub will render it perfectly.
-
-Do you want me to clean up **your full README draft** (the one with project structure + setup + usage) so it’s 100% copy-paste ready for GitHub?
-
-```
